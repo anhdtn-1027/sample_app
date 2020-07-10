@@ -1,0 +1,22 @@
+vi:
+  hello: "Xin chào thế giới"
+  sample_app: "Ứng dụng mẫu"
+  users:
+    index:
+      user: "Người dùng"
+      name: "Tên"
+      email: "Địa chỉ mail"
+      show: "Xem chi tiết"
+      edit: "Chinh sửa"
+      destroy: "Xóa"
+      new_user: "Thêm người dùng"
+      date: "Ngày tạo"
+  currency:
+    format:
+      delimiter: "."                  // Phân cách phần thập phân
+      format: "%n %u"                 // Định dạng
+      precision: 0
+      separator: ","                  // Phân cách các giá trị triệu, tỷ,...
+      significant: false
+      strip_insignificant_zeros: false
+      unit: "đồng"                    // Đơn vị
