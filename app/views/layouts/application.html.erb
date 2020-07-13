@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= t(".sample_app") %></title>
+    <title><%= yield :title %> | <%= t ".sample_app" %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
-    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
+    <%= stylesheet_link_tag "application",
+    media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "application",
+    "data-turbolinks-track": "reload" %>
   </head>
 
   <body>
     <h2>
-      <%= link_to "English", locale:"en" %>
-      <%= link_to "Vietnamese", locale:"vi" %>
+      <%= link_to t(".en"), locale: "en" %>
+      <%= link_to t(".vi"), locale: "vi" %>
     </h2>
     <%= yield %>
   </body>
