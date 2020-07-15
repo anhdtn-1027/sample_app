@@ -3,9 +3,22 @@ en:
   hello: "Hello world"
   layouts:
     application:
-      sample_app: "Ruby on Rails Tutorial Sample App"
+      title: "Ruby on Rails Tutorial Sample App"
+    header:
       en: "English"
       vi: "Vienamese"
+      sample_app: "Sample App"
+      home: "Home"
+      help: "Help"
+      login: "Login"
+    footer:
+      about: "About"
+      contact: "Contact"
+      michaelhartl: "Michael Hartl"
+      the: "The"
+      by: "by"
+      tutorial: "Ruby on Rails Tutorial"
+      news: "News"
   static_pages:
     home:
       sample_app: "Sample App"
@@ -13,6 +26,10 @@ en:
       home_page: "This is the home page for the"
       tutorial: "Ruby on Rails Tutorial"
       s_application: "sample application"
+      welcome_sample_app: "Welcome to the Sample App"
+      signup_now: "Sign up now!"
+      rails_logo: "Rails logo"
+      cat: "Cat"
     help:
       sample_app: "Sample App"
       help: "Help"
@@ -38,3 +55,7 @@ en:
       contact: "Contact"
       description: "Contact the Ruby on Rails Tutorial
         about the sample app at the"
+  users:
+    new:
+      signup: "Sign up"
+      description: "This will be a signup page for new users"

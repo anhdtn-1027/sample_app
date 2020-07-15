@@ -2,9 +2,22 @@ vi:
   hello: "Xin chào thế giới"
   layouts:
     application:
-      sample_app: "Ứng dụng mẫu Tài liệu Ruby on Rails"
+      title: "Ứng dụng mẫu Tài liệu Ruby on Rails"
+    header:
+      sample_app: "Ứng dụng mẫu"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
       en: "Tiếng anh"
       vi: "Tiếng việt"
+    footer:
+      about: "Giới thiệu"
+      contact: "Liên hệ"
+      michaelhartl: "Michael Hartl"
+      the: ""
+      by: "bởi"
+      tutorial: "Tài liệu Ruby on Rails"
+      news: "Tin mới"
   static_pages:
     home:
       sample_app: "Ứng dụng mẫu"
@@ -12,6 +25,10 @@ vi:
       home_page: "Đây là trang chủ của"
       tutorial: "Tài liệu Ruby on Rails"
       s_application: "ứng dụng mẫu"
+      welcome_sample_app: "Chào mừng đến với ứng dụng mẫu"
+      signup_now: "Đăng ký ngay!"
+      rails_logo: "Logo Rails"
+      cat: "Con mèo"
     help:
       sample_app: "Ứng dụng mẫu"
       help: "Trợ giúp"
@@ -36,3 +53,7 @@ vi:
     contact:
       contact: "Liên hệ"
       description: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại"
+  users:
+    new:
+      signup: "Đăng ký"
+      description: "Đây sẽ là trang đăng ký cho người dùng mới"
