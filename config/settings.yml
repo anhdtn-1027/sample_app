@@ -8,3 +8,14 @@ link:
   rubyonrails: "https://rubyonrails.org/"
   michaelhartl: "https://www.michaelhartl.com/"
   news_tutorial: "https://news.railstutorial.org/"
+user:
+  name:
+    length:
+      maximum: 50
+  email:
+    length:
+      maximum: 255
+    VALID_EMAIL_REGEX: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+  password:
+    length:
+      minimum: 6
