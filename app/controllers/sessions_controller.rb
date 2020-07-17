@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       log_in user
       check_remember user
       flash[:success] = t "users.success_user"
-      redirect_to user
+      redirect_back_or user
     else
       flash.now[:danger] = t "users.invalid_user"
       render :new
