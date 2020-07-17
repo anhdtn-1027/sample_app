@@ -106,6 +106,7 @@ vi:
       new_user: "Người dùng mới"
       signup_now: "Đăng ký ngay!"
       remember_me: "Ghi nhớ tôi trên máy tính này!"
+      forgot_password: "(quên mật khẩu)"
   views:
     pagination:
       first: "« ĐẦU"
@@ -122,3 +123,29 @@ vi:
       welcome_description: "Chào mừng tới ứng dụng mẫu!
         Click vào liên kết phía dưới để kích hoạt tài khoản của bạn."
       activate: "Kích hoạt"
+    password_reset:
+      password_reset: "Đặt lại mật khẩu"
+      to_reset_password: "Để đặt lại mật khẩu của bạn,
+        hãy click vào liên kết bên dưới:"
+      reset_password: "Đặt lại mật khẩu"
+      time_expire: "Liên kết này sẽ hết hạn trong hai giờ."
+      description: "Nếu bạn không yêu cầu đặt lại mật khẩu,
+        vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
+  password_resets:
+    error_loaded: "Lỗi tải trang!"
+    password_reset_expired: "Đặt lại mật khẩu đã hết hạn."
+    reset_success: "Mật khẩu đã được đặt lại."
+    validate_password_empty: "không thể trống"
+    invalid_user: "Người dùng không hợp lệ!"
+    password_reset: "Đặt lại mật khẩu"
+    email_notfound: "Không tìm thấy địa chỉ email"
+    send_reset_email: "Email được gửi với hướng dẫn đặt lại mật khẩu"
+    new:
+      forgot_password: "Quên mật khẩu"
+      email: "Email"
+      submit: "Gửi"
+    edit:
+      reset_password: "Đặt lại mật khẩu"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      update_password: "Cập nhật mật khẩu"

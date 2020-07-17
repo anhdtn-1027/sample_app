@@ -108,6 +108,7 @@ en:
       new_user: "New user"
       signup_now: "Sign up now!"
       remember_me: "Remember me on this computer"
+      forgot_password: "(forgot password)"
   views:
     pagination:
       first: "« FIRST"
@@ -124,3 +125,28 @@ en:
       welcome_description: "Welcome to the Sample App!
         Click on the link below to activate your account"
       activate: "Activate"
+    password_reset:
+      password_reset: "Password reset"
+      to_reset_password: "To reset your password click the link below:"
+      reset_password: "Reset password"
+      time_expire: "This link will expire in two hours."
+      description: "If you did not request your password to be reset,
+        please ignore this email and your password will stay as it is."
+  password_resets:
+    error_loaded: "Loaded error!"
+    password_reset_expired: "Password reset has expired."
+    reset_success: "Password has been reset."
+    validate_password_empty: "can't be empty"
+    invalid_user: "Invalid user!"
+    password_reset: "Password reset"
+    email_notfound: "Email address not found"
+    send_reset_email: "Email sent with password reset instructions"
+    new:
+      forgot_password: "Forgot password"
+      email: "Email"
+      submit: "Submit"
+    edit:
+      reset_password: "Reset password"
+      password: "Password"
+      confirmation: "Confirmation"
+      update_password: "Update password"

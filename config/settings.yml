@@ -19,6 +19,7 @@ user:
   password:
     length:
       minimum: 6
+    time_expired: 2
   avatar:
     gavatar_mail: "https://gravatar.com/emails"
     gavatar_domain: "https://secure.gravatar.com/avatar/"
