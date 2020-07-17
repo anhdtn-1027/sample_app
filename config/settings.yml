@@ -19,3 +19,6 @@ user:
   password:
     length:
       minimum: 6
+  avatar:
+    gavatar_domain: "https://secure.gravatar.com/avatar/"
+    size: 80
