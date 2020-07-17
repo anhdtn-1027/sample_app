@@ -89,6 +89,12 @@ vi:
     user:
       you_sure: "Bạn có chắc chắn?"
       delete: "xóa"
+    mailer:
+      check_email: "Hãy kiểm tra email của bạn để kích hoạt tài khoản."
+      activate_warning: "Tài khoản chưa được kích hoạt.
+        Kiểm tra email của bạn cho các liên kết kích hoạt."
+      account_activated: "Tài khoản của bạn đã được kích hoạt!"
+      activate_invalid: "Liên kết kích hoạt không phù hợp!"
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu có chứa"
@@ -107,3 +113,12 @@ vi:
       previous: "‹ TRƯỚC"
       next: "SAU ›"
       truncate: "…"
+  user_mailer:
+    acc_activ: "Kích hoạt tài khoản"
+    hi: "Chào"
+    account_activation:
+      sample_app: "Ứng dụng mẫu"
+      hi: "Xin chào"
+      welcome_description: "Chào mừng tới ứng dụng mẫu!
+        Click vào liên kết phía dưới để kích hoạt tài khoản của bạn."
+      activate: "Kích hoạt"
