@@ -14,8 +14,7 @@ class UsersController < ApplicationController
 
   def show
     @microposts = @user.microposts.page(params[:page])
-                         .per Settings.user.per_page
-    end
+                       .per Settings.user.per_page
   end
 
   def create
@@ -67,13 +66,5 @@ class UsersController < ApplicationController
 
   def admin_user
     redirect_to root_url unless current_user.admin?
-  end
-
-  def load_user
-    @user = User.find_by id: params[:id]
-    return if @user
-
-    flash[:danger] = t "users.notfound", id: params[:id]
-    redirect_to root_path
   end
 end

@@ -41,7 +41,7 @@ class MicropostsController < ApplicationController
   end
 
   def get_feed_items
-    current_user.feed(current_user.id).page(params[:page])
+    current_user.feed.page(params[:page])
                 .per Settings.user.per_page
   end
 end

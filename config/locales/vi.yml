@@ -60,6 +60,8 @@ vi:
       contact: "Liên hệ"
       description: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại"
   users:
+    following: "Đang theo dõi"
+    followers: "Người theo dõi"
     destroy_success: "Người dùng đã bị xóa!"
     require_login: "Làm ơn đăng nhập."
     error_edit: "Không thể cập nhật thay đổi!"
@@ -98,6 +100,13 @@ vi:
         Kiểm tra email của bạn cho các liên kết kích hoạt."
       account_activated: "Tài khoản của bạn đã được kích hoạt!"
       activate_invalid: "Liên kết kích hoạt không phù hợp!"
+    follow:
+      follow: "Theo dõi"
+    show_follow:
+      view_profile: "Xem thông tin của tôi"
+      microposts: "Microposts"
+    unfollow:
+      unfollow: "Ngừng theo dõi"
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu có chứa"
@@ -109,6 +118,8 @@ vi:
     user_info:
       view: "xem hồ sơ của tôi"
       micropost: "micropost"
+    stats:
+      followers: "followers"
   sessions:
     new:
       login: "Đăng nhập"
