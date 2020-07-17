@@ -13,9 +13,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user
-
-    redirect_to root_path
+    @microposts = @user.microposts.page(params[:page])
+                         .per Settings.user.per_page
+    end
   end
 
   def create
@@ -58,14 +58,6 @@ class UsersController < ApplicationController
     params.require(:user).permit User::USER_PARAMS
   end
 
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "users.require_login"
-    redirect_to login_url
-  end
-
   def correct_user
     return if current_user? @user
 
@@ -82,5 +74,6 @@ class UsersController < ApplicationController
     return if @user
 
     flash[:danger] = t "users.notfound", id: params[:id]
+    redirect_to root_path
   end
 end

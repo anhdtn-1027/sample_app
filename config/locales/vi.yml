@@ -34,6 +34,7 @@ vi:
       signup_now: "Đăng ký ngay!"
       rails_logo: "Logo Rails"
       cat: "Con mèo"
+      micropost_feed: "Micropost Feed"
     help:
       sample_app: "Ứng dụng mẫu"
       help: "Trợ giúp"
@@ -89,6 +90,8 @@ vi:
     user:
       you_sure: "Bạn có chắc chắn?"
       delete: "xóa"
+    show:
+      microposts: "Microposts"
     mailer:
       check_email: "Hãy kiểm tra email của bạn để kích hoạt tài khoản."
       activate_warning: "Tài khoản chưa được kích hoạt.
@@ -98,6 +101,14 @@ vi:
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu có chứa"
+      error: "lỗi"
+    micropost_form:
+      content: "Soạn micropost mới ..."
+      post: "Đăng"
+      alert: "Kích thước tệp tối đa là 5MB. Vui lòng chọn một tập tin nhỏ hơn."
+    user_info:
+      view: "xem hồ sơ của tôi"
+      micropost: "micropost"
   sessions:
     new:
       login: "Đăng nhập"
@@ -149,3 +160,15 @@ vi:
       password: "Mật khẩu"
       confirmation: "Xác nhận mật khẩu"
       update_password: "Cập nhật mật khẩu"
+  microposts:
+    created_success: "Micropost đã tạo xong!"
+    created_error: "Lỗi tạo Micropost!"
+    deleted_success: "Micropost đã được xóa!"
+    deleted_error: "Lỗi xóa Micropost!"
+    image_format: "phải là một định dạng hình ảnh hợp lệ."
+    image_size: "nên dưới 5MB."
+    micropost:
+      posted: "Đã đăng"
+      ago: "trước"
+      delete: "xóa"
+      confirm: "Bạn có chắc chắn muốn xóa?"

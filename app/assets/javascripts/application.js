@@ -16,3 +16,4 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+import './micropost'
