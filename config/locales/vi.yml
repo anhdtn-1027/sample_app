@@ -10,6 +10,11 @@ vi:
       login: "Đăng nhập"
       en: "Tiếng anh"
       vi: "Tiếng việt"
+      logout: "Đăng xuất"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
     footer:
       about: "Giới thiệu"
       contact: "Liên hệ"
@@ -54,6 +59,8 @@ vi:
       contact: "Liên hệ"
       description: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại"
   users:
+    success_user: "Đăng nhập thành công!"
+    invalid_user: "Email hoặc password không hợp lệ!"
     error_signup: "Lỗi đăng ký!"
     notfound: "Không tìm thấy người dùng có id %{id}"
     welcome_new: "Chào mừng đến với ứng dụng mẫu!"
@@ -67,3 +74,10 @@ vi:
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu có chứa"
+  sessions:
+    new:
+      login: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      new_user: "Người dùng mới"
+      signup_now: "Đăng ký ngay!"

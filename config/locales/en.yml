@@ -10,7 +10,12 @@ en:
       sample_app: "Sample App"
       home: "Home"
       help: "Help"
-      login: "Login"
+      login: "Log in"
+      logout: "Log out"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
     footer:
       about: "About"
       contact: "Contact"
@@ -56,6 +61,8 @@ en:
       description: "Contact the Ruby on Rails Tutorial
         about the sample app at the"
   users:
+    success_user: "Login Successfully!"
+    invalid_user: "Invalid email/password combination!"
     error_signup: "Registration Error!"
     notfound: "Can't find user for id %{id}"
     welcome_new: "Welcome to the Sample App!"
@@ -69,3 +76,10 @@ en:
   shared:
     error_messages:
       the_form_contains: "The form contains"
+  sessions:
+    new:
+      login: "Log in"
+      email: "Email"
+      password: "Password"
+      new_user: "New user"
+      signup_now: "Sign up now!"
