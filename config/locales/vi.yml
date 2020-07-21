@@ -54,6 +54,16 @@ vi:
       contact: "Liên hệ"
       description: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại"
   users:
+    error_signup: "Lỗi đăng ký!"
+    notfound: "Không tìm thấy người dùng có id %{id}"
+    welcome_new: "Chào mừng đến với ứng dụng mẫu!"
     new:
       signup: "Đăng ký"
-      description: "Đây sẽ là trang đăng ký cho người dùng mới"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      create_account: "Tạo tài khoản mới"
+  shared:
+    error_messages:
+      the_form_contains: "Biểu mẫu có chứa"

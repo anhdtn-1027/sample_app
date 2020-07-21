@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  USER_PARAMS = %i(name email password password_confirmation).freeze
+
   validates :name, presence: true,
     length: {maximum: Settings.user.name.length.maximum}
   validates :email, presence: true,
