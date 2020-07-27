@@ -59,18 +59,36 @@ vi:
       contact: "Liên hệ"
       description: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại"
   users:
+    destroy_success: "Người dùng đã bị xóa!"
+    require_login: "Làm ơn đăng nhập."
+    error_edit: "Không thể cập nhật thay đổi!"
+    not_correct: "Bạn không có quyền chỉnh sửa người dùng có id %{id}!"
+    profile_update: "Thông tin được cập nhật thành công!"
     success_user: "Đăng nhập thành công!"
     invalid_user: "Email hoặc password không hợp lệ!"
     error_signup: "Lỗi đăng ký!"
     notfound: "Không tìm thấy người dùng có id %{id}"
     welcome_new: "Chào mừng đến với ứng dụng mẫu!"
+    index:
+      all_users: "Tất cả người dùng"
+      previous: "Trước"
+      next: "Sau"
     new:
       signup: "Đăng ký"
+      create_account: "Tạo tài khoản mới"
+    edit:
+      edit_user: "Sửa người dùng"
+      save_change: "Lưu thay đổi"
+      update_profile: "Cập nhật thông tin của bạn"
+      change: "Thay đổi"
+    form:
       name: "Tên"
       email: "Email"
       password: "Mật khẩu"
       confirmation: "Xác nhận mật khẩu"
-      create_account: "Tạo tài khoản mới"
+    user:
+      you_sure: "Bạn có chắc chắn?"
+      delete: "xóa"
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu có chứa"
@@ -82,3 +100,10 @@ vi:
       new_user: "Người dùng mới"
       signup_now: "Đăng ký ngay!"
       remember_me: "Ghi nhớ tôi trên máy tính này!"
+  views:
+    pagination:
+      first: "« ĐẦU"
+      last: "CUỐI »"
+      previous: "‹ TRƯỚC"
+      next: "SAU ›"
+      truncate: "…"

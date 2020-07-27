@@ -20,6 +20,9 @@ user:
     length:
       minimum: 6
   avatar:
+    gavatar_mail: "https://gravatar.com/emails"
     gavatar_domain: "https://secure.gravatar.com/avatar/"
     size: 80
+    option_size: 50
+  per_page: 10
 check_box: 1

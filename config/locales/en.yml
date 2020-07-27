@@ -61,18 +61,36 @@ en:
       description: "Contact the Ruby on Rails Tutorial
         about the sample app at the"
   users:
+    destroy_success: "User deleted!"
+    require_login: "Please log in."
+    error_edit: "Update error!"
+    not_correct: "You can not edit user id %{id}!"
+    profile_update: "Profile updated!"
     success_user: "Login Successfully!"
     invalid_user: "Invalid email/password combination!"
     error_signup: "Registration Error!"
     notfound: "Can't find user for id %{id}"
     welcome_new: "Welcome to the Sample App!"
+    index:
+      all_users: "All Users"
+      previous: "Previous"
+      next: "Next"
     new:
       signup: "Sign up"
+      create_account: "Create my account"
+    edit:
+      edit_user: "Edit User"
+      save_change: "Save changes"
+      update_profile: "Update your profile"
+      change: "Change"
+    form:
       name: "Name"
       email: "Email"
       password: "Password"
       confirmation: "Confirmation"
-      create_account: "Create my account"
+    user:
+      you_sure: "You sure?"
+      delete: "delete"
   shared:
     error_messages:
       the_form_contains: "The form contains"
@@ -84,3 +102,10 @@ en:
       new_user: "New user"
       signup_now: "Sign up now!"
       remember_me: "Remember me on this computer"
+  views:
+    pagination:
+      first: "« FIRST"
+      last: "LAST »"
+      previous: "‹ PREV"
+      next: "NEXT ›"
+      truncate: "…"
