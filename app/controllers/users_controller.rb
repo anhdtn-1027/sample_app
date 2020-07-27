@@ -21,8 +21,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t "users.welcome_new"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "users.mailer.check_email"
+      redirect_to root_url
     else
       flash[:danger] = t "users.error_signup"
       render :new

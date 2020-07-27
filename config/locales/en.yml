@@ -91,6 +91,12 @@ en:
     user:
       you_sure: "You sure?"
       delete: "delete"
+    mailer:
+      check_email: "Please check your email to activate your account."
+      activate_warning: "Account not activated.
+        Check your email for the activation link."
+      account_activated: "Account activated!"
+      activate_invalid: "Invalid activation link!"
   shared:
     error_messages:
       the_form_contains: "The form contains"
@@ -109,3 +115,12 @@ en:
       previous: "‹ PREV"
       next: "NEXT ›"
       truncate: "…"
+  user_mailer:
+    acc_activ: "Account activation"
+    hi: "Hi"
+    account_activation:
+      sample_app: "Sample App"
+      hi: "Hi"
+      welcome_description: "Welcome to the Sample App!
+        Click on the link below to activate your account"
+      activate: "Activate"
