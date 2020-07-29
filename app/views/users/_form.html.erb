@@ -1,10 +1,10 @@
 <%= form_for @user, url: yield(:user_path) do |f| %>
-  <%= render "shared/error_messages" %>
-  <%= f.label t ".name" %>
+  <%= render "shared/error_messages", object: f.object %>
+  <%= f.label :name, t(".name") %>
   <%= f.text_field :name, class: "form-control" %>
-  <%= f.label t ".email" %>
+  <%= f.label :email, t(".email") %>
   <%= f.email_field :email, class: "form-control" %>
-  <%= f.label t ".password" %>
+  <%= f.label :password, t(".password") %>
   <%= f.password_field :password, class: "form-control" %>
   <%= f.label :password_confirmation, t(".confirmation") %>
   <%= f.password_field :password_confirmation, class: "form-control" %>

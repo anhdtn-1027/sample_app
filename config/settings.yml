@@ -27,3 +27,9 @@ user:
     option_size: 50
   per_page: 10
 check_box: 1
+micropost:
+  content:
+    maximum: 140
+    in: /%w(image/jpeg image/gif image/png)/
+  image_size: 5
+  resize_limit: "[500, 500]"

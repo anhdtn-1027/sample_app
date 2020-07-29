@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "2.7.1"
+gem "active_storage_validations", "0.8.2"
 gem "bcrypt", "3.1.13"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-kaminari-views"
@@ -9,8 +10,10 @@ gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "faker", "2.1.2"
 gem "figaro"
+gem "image_processing", "1.9.3"
 gem "jbuilder", "~> 2.5"
 gem "kaminari"
+gem "mini_magick", "4.9.5"
 gem "mysql2"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.0"
