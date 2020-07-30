@@ -1,7 +1,7 @@
 <li id="micropost-<%= micropost.id %>">
   <%= link_to gravatar_for(micropost.user,
     size: Settings.user.avatar.option_size), micropost.user %>
-  <span class="user"><%= link_to micropost.name, micropost.user %></span>
+  <span class="user"><%= link_to micropost.user_name, micropost.user %></span>
   <span class="content">
     <%= micropost.content %>
     <%= image_tag micropost.display_image if micropost.image.attached? %>

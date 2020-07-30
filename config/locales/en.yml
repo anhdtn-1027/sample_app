@@ -61,6 +61,8 @@ en:
       description: "Contact the Ruby on Rails Tutorial
         about the sample app at the"
   users:
+    following: "Following"
+    followers: "Followers"
     destroy_success: "User deleted!"
     require_login: "Please log in."
     error_edit: "Update error!"
@@ -99,6 +101,13 @@ en:
         Check your email for the activation link."
       account_activated: "Account activated!"
       activate_invalid: "Invalid activation link!"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      view_profile: "view my profile"
+      microposts: "Microposts"
   shared:
     error_messages:
       the_form_contains: "The form contains"
@@ -110,6 +119,8 @@ en:
     user_info:
       view: "view my profile"
       micropost: "micropost"
+    stats:
+      followers: "followers"
   sessions:
     new:
       login: "Log in"
