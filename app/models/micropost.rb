@@ -8,13 +8,19 @@ class Micropost < ApplicationRecord
   validates :user_id, presence: true
   validates :content, presence: true,
   length: {maximum: Settings.micropost.content.maximum}
-  validates :image, content_type: {in: Settings.micropost.content.in,
-  message: I18n.t("microposts.image_format")},
-  size: {less_than: Settings.micropost.image_size,
-  message: I18n.t("microposts.image_size")}
+  validates :image, content_type: {
+    in: Settings.micropost.content.in,
+    message: I18n.t("microposts.image_format")
+  },
+    size: {
+      less_than: Settings.micropost.image_size,
+      message: I18n.t("microposts.image_size")
+    }
 
   scope :order_created_at, ->{order created_at: :desc}
-  scope :micropost_feed, ->user_ids {where "user_id IN (?)", user_ids}
+  scope :micropost_feed, (lambda do |user_ids|
+    where "user_id IN (?)", user_ids
+  end)
 
   delegate :name, to: :user, prefix: :user
 

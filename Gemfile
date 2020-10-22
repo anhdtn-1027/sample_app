@@ -10,8 +10,12 @@ gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "faker", "2.1.2"
 gem "figaro"
+gem "grape"
+gem "grape-entity"
+gem "grape_on_rails_routes"
 gem "image_processing", "1.9.3"
 gem "jbuilder", "~> 2.5"
+gem "jwt"
 gem "kaminari"
 gem "mini_magick", "4.9.5"
 gem "mysql2"
@@ -24,6 +28,7 @@ gem "uglifier", ">= 1.3.0"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  gem "pry-rails"
 end
 
 group :development do
