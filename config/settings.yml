@@ -34,3 +34,5 @@ micropost:
     in: /%w(image/jpeg image/gif image/png)/
   image_size: 5
   resize_limit: "[500, 500]"
+date:
+  custom_day: "%Y-%m-%d"
