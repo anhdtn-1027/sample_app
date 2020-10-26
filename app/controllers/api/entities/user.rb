@@ -1,6 +1,6 @@
 module API
   module Entities
-    include API::ApiHelpers
+    include API::Helpers::APIHelpers
 
     class User < Grape::Entity
       expose :id

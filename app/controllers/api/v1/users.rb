@@ -12,7 +12,8 @@ module API
         get "", root: :users do
           users = User.includes(:microposts)
           data = Entities::User.represent users, except: [:microposts]
-          present response_success users: data.as_json
+          message = "get all users"
+          present response_success message, users: data
         end
 
         desc "Return a user"
@@ -24,7 +25,8 @@ module API
           data = Entities::User.represent user,
                                           except:
                                             [:microposts_count, :created_at]
-          present response_success user: data.as_json
+          message = "get user detail"
+          present response_success message, user: data
         end
       end
     end
