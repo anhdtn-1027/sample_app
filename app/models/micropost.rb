@@ -18,8 +18,9 @@ class Micropost < ApplicationRecord
     }
 
   scope :order_created_at, ->{order created_at: :desc}
+  scope :include_table, ->{includes :image_attachment}
   scope :micropost_feed, (lambda do |user_ids|
-    where "user_id IN (?)", user_ids
+    include_table.where "user_id IN (?)", user_ids
   end)
 
   delegate :name, to: :user, prefix: :user
