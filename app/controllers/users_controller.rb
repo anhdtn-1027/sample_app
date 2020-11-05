@@ -13,7 +13,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @microposts = @user.microposts.page(params[:page])
+    @microposts = @user.microposts.include_table.page(params[:page])
                        .per Settings.user.per_page
   end
 

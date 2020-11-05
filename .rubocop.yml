@@ -288,7 +288,7 @@ Style/LambdaCall:
     - braces
 
 Metrics/LineLength:
-  Max: 80
+  Max: 120
   AllowURI: true
   Exclude:
     - config/routes.rb
@@ -320,7 +320,7 @@ Style/MethodDefParentheses:
 
 Metrics/MethodLength:
   CountComments: false  # count full line comments?
-  Max: 10
+  Max: 20
 
 Naming/MethodName:
   EnforcedStyle: snake_case

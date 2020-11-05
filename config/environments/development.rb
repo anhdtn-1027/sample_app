@@ -72,4 +72,12 @@ Rails.application.configure do
     :port => ENV["port"],
     :authentication => :cram_md5
   }
+
+  config.after_initialize do
+    Bullet.enable = true
+    Bullet.bullet_logger = true
+    Bullet.console = true
+    Bullet.rails_logger = true
+    Bullet.add_footer = true
+  end
 end

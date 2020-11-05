@@ -1,0 +1,141 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/v1/auth/sign_in":
+    post:
+      summary: User sign_in
+      parameters: []
+      responses:
+        '200':
+          description: Login success
+          content: {}
+        '400':
+          description: Bad request
+          content: {}
+        '401':
+          description: Unauthorized
+          content: {}
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+              required:
+              - email
+              - password
+  "/v1/users/":
+    get:
+      summary: GET all users
+      tags:
+      - Users
+      parameters:
+      - name: Jwt-Token
+        in: header
+        schema:
+          type: apiKey
+      security:
+      - JWT_token: {}
+      responses:
+        '200':
+          description: GET users success
+          content: {}
+        '404':
+          description: 'Error: Not Found'
+          content: {}
+        '500':
+          description: 'Error: Internal Server Error'
+          content: {}
+  "/v1/users/{id}":
+    get:
+      summary: GET user detail
+      tags:
+      - Users
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+      - name: Jwt-Token
+        in: header
+        schema:
+          type: apiKey
+      security:
+      - JWT_token: {}
+      responses:
+        '200':
+          description: user found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                required:
+                - id
+            application/xml:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                required:
+                - id
+        '404':
+          description: 'Error: Not Found'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                required:
+                - id
+            application/xml:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                required:
+                - id
+        '500':
+          description: 'Error: Internal Server Error'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                required:
+                - id
+            application/xml:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                required:
+                - id
+servers:
+- url: http://{defaultHost}/api
+  variables:
+    defaultHost:
+      default: localhost:3000
+securityDefinitions:
+  JWT_token:
+    description: authenticate token
+    type: apiKey
+    name: Jwt-Token
+    in: header

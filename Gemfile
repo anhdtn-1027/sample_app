@@ -8,13 +8,14 @@ gem "bootstrap-kaminari-views"
 gem "bootstrap-sass", "3.4.1"
 gem "coffee-rails", "~> 4.2"
 gem "config"
-gem "faker", "2.1.2"
+gem "faker", git: "https://github.com/faker-ruby/faker.git"
 gem "figaro"
 gem "grape"
 gem "grape-entity"
 gem "grape_on_rails_routes"
 gem "image_processing", "1.9.3"
 gem "jbuilder", "~> 2.5"
+gem "jquery-rails"
 gem "jwt"
 gem "kaminari"
 gem "mini_magick", "4.9.5"
@@ -30,6 +31,7 @@ gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
 
 group :development, :test do
+  gem "bullet"
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "pry-rails"
   gem "rspec-rails"
@@ -48,7 +50,9 @@ end
 group :test do
   gem "capybara", ">= 2.15", "< 4.0"
   gem "chromedriver-helper"
+  gem "database_cleaner", "~> 1.5"
   gem "selenium-webdriver"
+  gem "shoulda-matchers", "~> 3.0", require: false
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
