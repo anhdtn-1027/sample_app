@@ -76,14 +76,6 @@ vi:
       all_users: "Tất cả người dùng"
       previous: "Trước"
       next: "Sau"
-    new:
-      signup: "Đăng ký"
-      create_account: "Tạo tài khoản mới"
-    edit:
-      edit_user: "Sửa người dùng"
-      save_change: "Lưu thay đổi"
-      update_profile: "Cập nhật thông tin của bạn"
-      change: "Thay đổi"
     form:
       name: "Tên"
       email: "Email"
@@ -129,6 +121,15 @@ vi:
       signup_now: "Đăng ký ngay!"
       remember_me: "Ghi nhớ tôi trên máy tính này!"
       forgot_password: "(quên mật khẩu)"
+  registrations:
+    new:
+      signup: "Đăng ký"
+      create_account: "Tạo tài khoản mới"
+    edit:
+      edit_user: "Sửa người dùng"
+      save_change: "Lưu thay đổi"
+      update_profile: "Cập nhật thông tin của bạn"
+      change: "Thay đổi"
   views:
     pagination:
       first: "« ĐẦU"

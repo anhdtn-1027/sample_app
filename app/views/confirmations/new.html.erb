@@ -1,0 +1,19 @@
+<h2>Kích hoạt tài khoản</h2>
+
+<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "shared/error_messages", object: resource %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",
+      value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Gửi mail kích hoạt", class: "btn btn-primary" %>
+  </div>
+<% end %>
+<div>
+  <%= link_to "Đăng nhập", new_user_session_path %>
+  hoặc <%= link_to "Đăng ký", new_user_registration_path %>
+</div>

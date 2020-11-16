@@ -7,7 +7,7 @@
         <li><%= link_to t(".help"), help_path %></li>
         <li><%= link_to t(".en"), locale: :en %></li>
         <li><%= link_to t(".vi"), locale: :vi %></li>
-        <% if logged_in? %>
+        <% if user_signed_in? %>
           <li><%= link_to t(".users"), users_path %></li>
           <li class="dropdown">
             <%= link_to("#", class: "dropdown-toggle",
@@ -18,16 +18,16 @@
             <ul class="dropdown-menu">
               <li><%= link_to t(".profile"), current_user %></li>
               <li>
-                <%= link_to t(".settings"), edit_user_path(current_user) %>
+                <%= link_to t(".settings"), edit_user_registration_path %>
               </li>
               <li class="divider"></li>
               <li>
-                <%= link_to t(".logout"), logout_path, method: :delete %>
+                <%= link_to t(".logout"), destroy_user_session_path, method: :delete %>
               </li>
             </ul>
           </li>
         <% else %>
-          <li><%= link_to t(".login"), login_path %></li>
+          <li><%= link_to t(".login"), new_user_session_path %></li>
         <% end %>
       </ul>
     </nav>

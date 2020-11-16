@@ -1,0 +1,24 @@
+<% provide :title, t(".edit_user") %>
+<% provide :button_text, t(".save_change") %>
+<h1><%= t ".update_profile" %></h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= render "users/form", page: "edit" %>
+    <div class="gravatar_edit clearfix d-flex align-items-center">
+      <%= gravatar_for @user %>
+      <%= link_to t(".change"), Settings.user.avatar.gavatar_mail,
+        target: "_blank", rel: "noopener" %>
+    </div>
+    <div>
+      <h3>Xóa tài khoản</h3>
+      <%= button_to "Cancel my account",
+        registration_path(resource_name), data: { confirm: "Are you sure?" },
+        method: :delete, class: "btn btn-danger" %>
+      <br/>
+      <%= link_to :back do %>
+        <%= fa_icon "hand-point-left", size: "lg" %>
+        Back
+      <% end %>
+    </div>
+  </div>
+</div>
