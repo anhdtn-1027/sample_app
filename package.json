@@ -4,7 +4,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "3.4.1",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "toastr": "^2.1.4"
   }
 }
