@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  USER_PARAMS = %i(name email password password_confirmation).freeze
+  USER_PARAMS = %i(name email password password_confirmation remember_me).freeze
 
   attr_accessor :remember_token, :activation_token, :reset_token
 
@@ -13,6 +13,11 @@ class User < ApplicationRecord
   has_many :following, through: :active_relationships, source: :followed
   has_many :followers, through: :passive_relationships, source: :follower
 
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable, :confirmable
+
   validates :name, presence: true,
     length: {maximum: Settings.user.name.length.maximum}
   validates :email, presence: true,
@@ -22,7 +27,6 @@ class User < ApplicationRecord
   validates :password, presence: true,
     length: {minimum: Settings.user.password.length.minimum}, allow_nil: true
 
-  has_secure_password
 
   before_create :create_activation_digest
   before_save :downcase_email
@@ -81,7 +85,7 @@ class User < ApplicationRecord
   end
 
   def feed
-    Micropost.micropost_feed following_ids << id
+    Micropost.includes(:user).micropost_feed following_ids << id
   end
 
   def follow other_user
